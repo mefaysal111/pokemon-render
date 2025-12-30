@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon Finder</title>
+    <title>Pokemon App</title>
     <link rel="stylesheet" href="./pokemon.css" />
   </head>
   <body>
     <div class="search-box">
       <input type="text" id="pokemonInput" placeholder="Enter Pokémon name" />
       <button id="searchBtn">Search</button>
+      <button id="randomBtn">Random Pokémon</button>
+      <button id="favoriteBtn">Add to Favorites</button>
     </div>
+    <h3>My Favorites</h3>
+    <ul id="favoritesList"></ul>
+
     <p id="errorMsg"></p>
     <div class="all-container active">
       <div class="pokemon-card" id="pokemonCard">
