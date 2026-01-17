@@ -86,7 +86,7 @@ async function fetchPokemon() {
     const mainType = data.types[0].type.name;
     const borderColor = typeColors[mainType] || '#ccc';
 
-    document.querySelector('.pokemon-card').style.borderColor = borderColor;
+    document.querySelector('.pokemon-card').style.backgroundColor = borderColor;
 
     card.classList.remove('active');
     pokemonId.textContent = data.id;
@@ -106,7 +106,7 @@ async function fetchPokemon() {
     container.innerHTML = '';
     const maxStat = 200;
     stats.forEach((stat) => {
-      const percent = Math.round((stat.value / maxStat) * 100);
+      const percent = Math.round((stat.value / maxStat) * 100); // not necessary as in my code not using
 
       const statHTML = `
       <div class="align-row">
